@@ -11,10 +11,11 @@ function displayItems() {
     for (let i = 0; i < itemsArray.length; i++) {
         items += ` <div class="item">
                     <div class="input-controller">
-                        <textarea disabled>${itemsArray[i]}</textarea>
+                    <textarea disabled>${itemsArray[i]}</textarea>
                         <div class="edit-controller">
-                            <i class="fa-solid fa-check deleteBtn"></i>
+                            <i class="fa-solid fa-check crossoutBtn"></i>
                             <i class="fa-regular fa-pen-to-square editBtn"></i>
+                            <i class="fa-solid fa-trash deleteBtn"> </i>
                         </div>
                     </div>
                     <div class="update-controller">
@@ -30,6 +31,7 @@ function displayItems() {
     activateEditListeners()
     activateSaveListeners()
     activateCancelListeners()
+    activateCrossOutListeners()
 }
 
 function activateDeleteListeners() {
@@ -52,6 +54,15 @@ function activateEditListeners() {
     })
 }
 
+function activateCrossOutListeners() {
+    const crossoutBtns = document.querySelectorAll(".crossoutBtn");
+    crossoutBtns.forEach((crossoutBtn, i) => {
+        crossoutBtn.addEventListener("click", () => {
+            toggleCrossout(i);
+        });
+    });
+}
+
 function activateSaveListeners() {
     const saveBtn = document.querySelectorAll(".saveBtn")
     const inputs = document.querySelectorAll(".input-controller textarea")
@@ -65,7 +76,7 @@ function activateSaveListeners() {
 function activateCancelListeners() {
     const cancelBtn = document.querySelectorAll(".cancelBtn")
     const updateController = document.querySelectorAll(".update-controller")
-    const inputs = document.querySelectorAll("input-controller textarea")
+    const inputs = document.querySelectorAll(".input-controller textarea")
     cancelBtn.forEach((cb, i) => {
         cb.addEventListener("click", () => {
             updateController[i].style.display = "none"
@@ -78,6 +89,11 @@ function updateItem(text, i) {
     itemsArray[i] = text
     localStorage.setItem("items", JSON.stringify(itemsArray))
     location.reload()
+}
+
+function toggleCrossout(textareaIndex) {
+    const textarea = document.querySelectorAll(".input-controller textarea")[textareaIndex];
+    textarea.classList.toggle("crossout");
 }
 
 function deleteItem(i) {
@@ -102,4 +118,7 @@ function displayDate() {
 window.onload = function () {
     displayDate()
     displayItems()
+    activateCrossOutListeners();
 }
+
+
