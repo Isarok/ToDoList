@@ -14,3 +14,10 @@ body {
     font-family: 'Shadows Into Light', cursive;
     min-height: 100vh;
 }
+
+form {
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    text-align: center;
+}
