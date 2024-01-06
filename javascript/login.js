@@ -1,3 +1,6 @@
+const itemsArray = localStorage.getItem("items") ? JSON.parse(localStorage.getItem("items")) : []
+console.log(itemsArray)
+
 const deep = document.querySelector(".deep");
 const loginlink = document.querySelector(".login-link")
 const registerlink = document.querySelector(".register-link")
