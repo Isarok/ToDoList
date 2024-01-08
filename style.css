@@ -1,0 +1,127 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/* #5b7065, black */
+body {
+    background: rgba(48, 64, 64, 1.0);
+    background: -webkit-radial-gradient(center, rgba(48, 64, 64, 1.0) 0%, rgba(0, 0, 0, 1.0) 100%);
+    background: -moz-radial-gradient(center, rgba(48, 64, 64, 1.0) 0%, rgba(0, 0, 0, 1.0) 100%);
+    background: radial-gradient(ellipse at center, rgba(48, 64, 64, 1.0) 0%, rgba(0, 0, 0, 1.0) 100%);
+    font-family: 'Shadows Into Light', cursive;
+    min-height: 100vh;
+}
+
+main.page-one {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    /* z-index: 99; */
+
+
+}
+
+.title-one {
+    font-size: 4.8em;
+    color: #fff;
+    user-select: none;
+    cursor: row;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 60px;
+}
+
+.title-two {
+    font-size: 2.4em;
+    color: #fff;
+    user-select: none;
+    cursor: row; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+.navigation .login {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 50px;
+    background: transparent;
+    border: 2px solid #fff;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    color: #fff;
+    font-weight: 600;
+}
+
+
+.navigation .login:hover {
+    background: #7411ff;
+    color: #fff;
+}
+
+.navigation .signup {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 50px;
+    background: transparent;
+    border: 2px solid #fff;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    color: #fff;
+    font-weight: 600;
+}
+
+
+.navigation .signup:hover {
+    background: #7411ff;
+    color: #fff;
+}
+
+
+
+
+@media(min-width: 768px) {
+
+    nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        
+    }
+
+    .title-one {
+        font-size: 6.8em;
+    }
+
+    .title-two {
+        font-size: 3.4em;
+    }
+
+    .navigation .login .signup {
+        
+        width: 160px;
+        height: 50px;
+    }
+
+}
