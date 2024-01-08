@@ -219,7 +219,7 @@ textarea:focus {
   
 }
 
-.task-textarea.crossout {
+.task-textarea .checkBtn {
   text-decoration: line-through; 
   
 }

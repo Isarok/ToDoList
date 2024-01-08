@@ -1,7 +1,7 @@
 window.onload = function () {
     displayDate()
     displayItems()
-    activateCrossoutListeners();
+    
 }
 
 document.addEventListener('DOMContentLoaded', function () {

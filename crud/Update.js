@@ -8,7 +8,7 @@ function activateEditListeners() {
             inputs[i].disabled = false
         })
     })
-    
+
 }
 
 

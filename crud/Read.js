@@ -5,7 +5,7 @@ function displayItems(/* tarea,id,realizado,eliminado */) {
                         <div class="input-controller">
                             <textarea class="task-textarea" disabled>${itemsArray[i]}</textarea>
                                 <div class="edit-controller">
-                                <i class="fa-solid fa-check crossoutBtn"></i>
+                                <i class="fa-solid fa-check checkBtn"></i>
                                 <i class="fa-regular fa-pen-to-square editBtn"></i>
                                 <i class="fa-solid fa-trash deleteBtn"></i>
                              </div>
@@ -18,9 +18,12 @@ function displayItems(/* tarea,id,realizado,eliminado */) {
     }
 
     document.querySelector(".to-do-list").innerHTML = items
-    activateDeleteListeners()
-    activateEditListeners()
-    activateSaveListeners()
-    activateCancelListeners()
-    activateCrossoutListeners()
+
+    activateDeleteListeners();
+    activateEditListeners();
+    activateSaveListeners();
+    activateCancelListeners();
+    activateCheckListeners();
+   
+
 }

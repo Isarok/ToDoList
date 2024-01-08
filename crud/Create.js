@@ -11,3 +11,13 @@ function createItem(item) {
     localStorage.setItem("items", JSON.stringify(itemsArray))
     location.reload()
 }
+
+function activateCheckListeners() {
+    const crossoutBtn = document.querySelectorAll(".checkBtn");
+    const inputs = document.querySelectorAll(".input-controller textarea");
+    crossoutBtn.forEach((cb, i) => {
+        cb.addEventListener("click", () => {
+            inputs[i].classList.toggle("crossout");
+        })
+    })
+ }

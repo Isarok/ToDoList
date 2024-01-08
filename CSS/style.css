@@ -21,7 +21,7 @@ main.page-one {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    z-index: 99;
+    /* z-index: 99; */
 
 
 }
@@ -30,7 +30,7 @@ main.page-one {
     font-size: 4.8em;
     color: #fff;
     user-select: none;
-    cursor: pointer;
+    cursor: row;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -41,7 +41,7 @@ main.page-one {
     font-size: 2.4em;
     color: #fff;
     user-select: none;
-    cursor: pointer;
+    cursor: row; 
     display: flex;
     justify-content: center;
     align-items: center;
@@ -51,7 +51,7 @@ nav {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    margin-top: 150px;
+    margin-top: 30px;
 }
 
 .navigation .login {
@@ -111,11 +111,11 @@ nav {
     }
 
     .title-one {
-        font-size: 8.8em;
+        font-size: 6.8em;
     }
 
     .title-two {
-        font-size: 4.4em;
+        font-size: 3.4em;
     }
 
     .navigation .login .signup {
