@@ -3,10 +3,10 @@ document.addEventListener('DOMContentLoaded', function () {
     const signupButton = document.getElementById('signupButton');
 
     loginButton.addEventListener('click', function () {
-        window.location.href = '/login.html';
+        window.location.href = '/src/login.html';
     });
 
     signupButton.addEventListener('click', function () {
-        window.location.href = '/login.html';
+        window.location.href = '/src/login.html';
     });
 });
