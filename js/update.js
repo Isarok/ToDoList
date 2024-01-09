@@ -11,7 +11,6 @@ function activateEditListeners() {
 
 }
 
-
 function activateSaveListeners() {
     const saveBtn = document.querySelectorAll(".saveBtn")
     const inputs = document.querySelectorAll(".input-controller textarea")
@@ -27,7 +26,6 @@ function updateItem(text, i) {
     localStorage.setItem("items", JSON.stringify(itemsArray))
     location.reload()
 }
-
 
 function activateCancelListeners() {
     const cancelBtn = document.querySelectorAll(".cancelBtn")
