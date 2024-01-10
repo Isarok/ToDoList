@@ -23,4 +23,4 @@ Este proyecto es una aplicación web simple de lista de tareas (TodoList) desarr
 1. Clona el repositorio o descarga los archivos en tu máquina local.
 
    ```bash
-   git clone https://github.com/tuusuario/todolist.git
+   https://github.com/Isarok/To-Do-List.github.io.git
