@@ -25,3 +25,4 @@ function displayItems(/* tarea,id,realizado,eliminado */) {
     activateCancelListeners();
     activateCheckListeners();
 }
+
