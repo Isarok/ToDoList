@@ -17,7 +17,7 @@ function activateCheckListeners() {
     const inputs = document.querySelectorAll(".input-controller textarea");
     crossoutBtn.forEach((cb, i) => {
         cb.addEventListener("click", () => {
-            inputs[i].classList.addClass("crossout");
+            inputs[i].classList.toggle("crossout");
         })
     })
  }
