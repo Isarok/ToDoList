@@ -6,10 +6,12 @@ document.querySelector("#enter").addEventListener("click", () => {
     createItem(item)
 })
 
+
 function createItem(item) {
-    itemsArray.push(item.value)
-    localStorage.setItem("items", JSON.stringify(itemsArray))
-    location.reload()
+    let priority = document.getElementById('priority').value;
+    itemsArray.push({ text: item.value, completed: false, priority: priority });
+    localStorage.setItem("items", JSON.stringify(itemsArray));
+    location.reload();
 }
 
 function activateCheckListeners() {
@@ -20,4 +22,4 @@ function activateCheckListeners() {
             inputs[i].classList.toggle("crossout");
         })
     })
- }
+}

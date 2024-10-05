@@ -23,7 +23,7 @@ function activateSaveListeners() {
 }
 
 function updateItem(text, i) {
-    itemsArray[i] = text
+    itemsArray[i].text = text
     localStorage.setItem("items", JSON.stringify(itemsArray))
     location.reload()
 }
@@ -39,4 +39,16 @@ function activateCancelListeners() {
             inputs[i].disabled = true
         })
     })
+}
+
+function activateCheckListeners() {
+    const crossoutBtn = document.querySelectorAll(".checkBtn");
+    const inputs = document.querySelectorAll(".input-controller textarea");
+    crossoutBtn.forEach((cb, i) => {
+        cb.addEventListener("click", () => {
+            itemsArray[i].completed = !itemsArray[i].completed;
+            localStorage.setItem("items", JSON.stringify(itemsArray));
+            location.reload();
+        });
+    });
 }

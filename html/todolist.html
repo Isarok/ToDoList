@@ -24,10 +24,11 @@
         <div class="bar"></div>
     </div>
     <nav class="navigation">
-        <a href="#">Urgent</a>
-        <a href="#">Important</a>
-        <a href="#">Medium</a>
-        <a href="#">Not Important</a>
+        <a href="#" id="All">All</a>
+        <a href="#" id="Urgent">Urgent</a>
+        <a href="#" id="Important">Important</a>
+        <a href="#" id="Medium">Medium</a>
+        <a href="#" id="Not Important">Not Important</a>
     </nav>
 
 
@@ -40,19 +41,27 @@
             <h1><span id="date"></span></h1>
             <div class="to-do-input">
                 <input type="text" id="item" placeholder="Enter a task...">
+                <select id="priority">
+                    <option value="Urgent">Urgent</option>
+                    <option value="Important">Important</option>
+                    <option value="Medium">Medium</option>
+                    <option value="Not Important">Not Important</option>
+                    <option value="Not Set">Not Set</option>
+                </select>
                 <button id="enter">Enter</button>
             </div>
         </div>
         <div class="to-do-list"></div>
-
     </main>
 
     <script src="/crud/Create.js"></script>
     <script src="/crud/Read.js"></script>
     <script src="/crud/Update.js"></script>
     <script src="/crud/Delete.js"></script>
+    <script src="/crud/Filters.js"></script>
     <script src="/crud/User_Interface_Features.js"></script>
     <script src="/crud/dom.js"></script>
+
 
 </body>
 
