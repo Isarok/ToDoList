@@ -5,8 +5,8 @@ function activateDeleteListeners() {
     })
 }
 
-function deleteItem(i) {
-    itemsArray.splice(i, 1)
-    localStorage.setItem("items", JSON.stringify(itemsArray))
-    location.reload()
+function deleteItem(index) {
+    itemsArray.splice(index, 1);
+    localStorage.setItem("items", JSON.stringify(itemsArray));
+    displayItems(currentFilter);
 }
