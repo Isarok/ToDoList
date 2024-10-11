@@ -3,6 +3,16 @@
     margin: 0;
 }
 
+#particles-js {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1; /* Asegúrate de que esté detrás de otros elementos */
+    overflow: hidden;
+}
+
 /* #5b7065, black */
 body {
     background: rgba(48, 64, 64, 1.0);
@@ -27,24 +37,37 @@ main.page-one {
 }
 
 .title-one {
-    font-size: 4.8em;
-    color: #fff;
-    user-select: none;
-    cursor: row;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 60px;
+        font-size: 4.8em; /* Tamaño del texto */
+        color: lightgrey; /* Color del texto */
+        user-select: none; /* Evitar selección de texto */
+        cursor: row; /* Estilo del cursor */
+        display: flex; /* Usar flexbox */
+        justify-content: center; /* Centrar contenido */
+        align-items: center; /* Alinear verticalmente */
+        margin: 60px; /* Espaciado externo */
+        text-shadow: 
+            0 0 5px rgba(119, 3, 252, 0.7),  /* Sombra suave cerca del texto */
+            0 0 10px rgba(119, 3, 252, 0.7), /* Sombra más difusa */
+            0 0 20px rgba(119, 3, 252, 0.8), /* Sombra intensa */
+            0 0 30px rgba(119, 3, 252, 0.9), /* Sombra aún más intensa */
+            0 0 40px rgba(119, 3, 252, 1); /* Sombra máxima */
+
 }
 
 .title-two {
     font-size: 2.4em;
-    color: #fff;
+    color: lightgrey;
     user-select: none;
     cursor: row; 
     display: flex;
     justify-content: center;
     align-items: center;
+    text-shadow: 
+            0 0 5px rgba(119, 3, 252, 0.7),  /* Sombra suave cerca del texto */
+            0 0 10px rgba(119, 3, 252, 0.7), /* Sombra más difusa */
+            0 0 20px rgba(119, 3, 252, 0.8), /* Sombra intensa */
+            0 0 30px rgba(119, 3, 252, 0.9), /* Sombra aún más intensa */
+            0 0 40px rgba(119, 3, 252, 1); /* Sombra máxima */
 }
 
 nav {
@@ -62,18 +85,33 @@ nav {
     width: 100px;
     height: 50px;
     background: transparent;
-    border: 2px solid #fff;
-    border-radius: 6px;
+    border: 2px solid #7703fc; /* Borde del botón */
+    border-radius: 6px; /* Esquinas redondeadas */
     cursor: pointer;
-    font-size: 1.1rem;
-    color: #fff;
-    font-weight: 600;
+    font-size: 1.1rem; /* Tamaño de fuente */
+    color: lightgrey; /* Color del texto */
+    font-weight: 600; /* Peso de la fuente */
+    position: relative; /* Para el posicionamiento de la sombra */
+    overflow: hidden; /* Para ocultar sombras que sobresalgan */
+    transition: all 0.3s ease; /* Transición suave al pasar el mouse */
 }
 
-
+/* Efecto de sombra y neón al pasar el mouse */
 .navigation .login:hover {
-    background: #7411ff;
-    color: #fff;
+    color: #fff; /* Cambia el color del texto al pasar el mouse */
+    border-color: #7703fc; /* Cambia el color del borde */
+    box-shadow: 0 0 10px rgba(119, 3, 252, 0.7), /* Sombra suave */
+                0 0 20px rgba(119, 3, 252, 0.6), /* Sombra difusa */
+                0 0 30px rgba(119, 3, 252, 0.5), /* Sombra intensa */
+                0 0 40px rgba(119, 3, 252, 0.4); /* Sombra máxima */
+    text-shadow: 0 0 5px rgba(119, 3, 252, 1), /* Sombra de texto */
+                 0 0 10px rgba(119, 3, 252, 0.9); /* Sombra de texto más intensa */
+}
+
+/* Transición al salir el mouse */
+.navigation .login:active {
+    box-shadow: 0 0 5px rgba(119, 3, 252, 0.7), 
+                0 0 10px rgba(119, 3, 252, 0.6);
 }
 
 .navigation .signup {
@@ -84,18 +122,33 @@ nav {
     width: 100px;
     height: 50px;
     background: transparent;
-    border: 2px solid #fff;
-    border-radius: 6px;
+    border: 2px solid #7703fc; /* Borde del botón */
+    border-radius: 6px; /* Esquinas redondeadas */
     cursor: pointer;
-    font-size: 1.1rem;
-    color: #fff;
-    font-weight: 600;
+    font-size: 1.1rem; /* Tamaño de fuente */
+    color: lightgrey; /* Color del texto */
+    font-weight: 600; /* Peso de la fuente */
+    position: relative; /* Para el posicionamiento de la sombra */
+    overflow: hidden; /* Para ocultar sombras que sobresalgan */
+    transition: all 0.3s ease; /* Transición suave al pasar el mouse */
 }
 
 
 .navigation .signup:hover {
-    background: #7411ff;
-    color: #fff;
+    color: lightgrey; /* Cambia el color del texto al pasar el mouse */
+    border-color: #7703fc; /* Cambia el color del borde */
+    box-shadow: 0 0 10px rgba(119, 3, 252, 0.7), /* Sombra suave */
+                0 0 20px rgba(119, 3, 252, 0.6), /* Sombra difusa */
+                0 0 30px rgba(119, 3, 252, 0.5), /* Sombra intensa */
+                0 0 40px rgba(119, 3, 252, 0.4); /* Sombra máxima */
+    text-shadow: 0 0 5px rgba(119, 3, 252, 1), /* Sombra de texto */
+                 0 0 10px rgba(119, 3, 252, 0.9); /* Sombra de texto más intensa */
+}
+
+/* Transición al salir el mouse */
+.navigation .login:active {
+    box-shadow: 0 0 5px rgba(119, 3, 252, 0.7), 
+                0 0 10px rgba(119, 3, 252, 0.6);
 }
 
 
