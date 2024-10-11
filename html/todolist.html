@@ -29,26 +29,28 @@
 </head>
 
 
-<header>
-    <div class="menu-btn">
-        <div class="bar"></div>
-        <div class="bar"></div>
-        <div class="bar"></div>
-    </div>
-    <nav class="navigation">
-        <a href="#" id="All">All</a>
-        <a href="#" id="Urgent">Urgent</a>
-        <a href="#" id="Important">Important</a>
-        <a href="#" id="Medium">Medium</a>
-        <a href="#" id="Not Important">Not Important</a>
-        <a href="#" id="Completed">Completed</a>
-        <a href="#" id="Uncompleted">Uncompleted</a>
-    </nav>
-
-
-</header>
 
 <body>
+
+    <header>
+        <div class="menu-btn">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <nav class="navigation">
+            <a href="#" id="All">All</a>
+            <a href="#" id="Urgent">Urgent</a>
+            <a href="#" id="Important">Important</a>
+            <a href="#" id="Medium">Medium</a>
+            <a href="#" id="Not Important">Not Important</a>
+            <a href="#" id="Completed">Completed</a>
+            <a href="#" id="Uncompleted">Uncompleted</a>
+        </nav>
+
+
+    </header>
+
     <main class="app">
         <h1 class="title">My Todo List...</h1>
 
@@ -82,6 +84,12 @@
     <script src="../crud/User_Interface_Features.js" defer></script>
     <script src="../crud/Hamburguer.js" defer></script>
     <script src="../crud/dom.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script>
+        particlesJS.load('particles-js', '../javascript/particles-config.json', function () {
+            console.log('particles.js loaded - callback');
+        });
+    </script>
 </body>
 
 
