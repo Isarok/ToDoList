@@ -38,7 +38,7 @@ function activateCancelListeners() {
 function updateItem(text, i) {
     itemsArray[i].text = text;
     localStorage.setItem("items", JSON.stringify(itemsArray));
-    // Actualiza la interfaz de usuario
+
     displayItems('All');
 }
 
@@ -49,7 +49,7 @@ function activateCheckListeners() {
             event.stopPropagation();
             itemsArray[i].completed = !itemsArray[i].completed;
             localStorage.setItem("items", JSON.stringify(itemsArray));
-            // Actualiza la interfaz de usuario
+
             displayItems(currentFilter);
         });
     });

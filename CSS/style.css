@@ -51,20 +51,20 @@ main.page-one {
 }
 
 .title-one {
-        font-size: 4.8em; /* Tamaño del texto */
-        color: lightgrey; /* Color del texto */
-        user-select: none; /* Evitar selección de texto */
-        cursor: row; /* Estilo del cursor */
-        display: flex; /* Usar flexbox */
-        justify-content: center; /* Centrar contenido */
-        align-items: center; /* Alinear verticalmente */
-        margin: 60px; /* Espaciado externo */
+        font-size: 4.8em; 
+        color: lightgrey; 
+        user-select: none; 
+        cursor: row; 
+        display: flex; 
+        justify-content: center; 
+        align-items: center; 
+        margin: 60px; 
         text-shadow: 
-            0 0 5px rgba(119, 3, 252, 0.7),  /* Sombra suave cerca del texto */
-            0 0 10px rgba(119, 3, 252, 0.7), /* Sombra más difusa */
-            0 0 20px rgba(119, 3, 252, 0.8), /* Sombra intensa */
-            0 0 30px rgba(119, 3, 252, 0.9), /* Sombra aún más intensa */
-            0 0 40px rgba(119, 3, 252, 1); /* Sombra máxima */
+            0 0 5px rgba(119, 3, 252, 0.7),  
+            0 0 10px rgba(119, 3, 252, 0.7), 
+            0 0 20px rgba(119, 3, 252, 0.8), 
+            0 0 30px rgba(119, 3, 252, 0.9), 
+            0 0 40px rgba(119, 3, 252, 1); 
 
 }
 
@@ -77,11 +77,11 @@ main.page-one {
     justify-content: center;
     align-items: center;
     text-shadow: 
-            0 0 5px rgba(119, 3, 252, 0.7),  /* Sombra suave cerca del texto */
-            0 0 10px rgba(119, 3, 252, 0.7), /* Sombra más difusa */
-            0 0 20px rgba(119, 3, 252, 0.8), /* Sombra intensa */
-            0 0 30px rgba(119, 3, 252, 0.9), /* Sombra aún más intensa */
-            0 0 40px rgba(119, 3, 252, 1); /* Sombra máxima */
+            0 0 5px rgba(119, 3, 252, 0.7),  
+            0 0 10px rgba(119, 3, 252, 0.7), 
+            0 0 20px rgba(119, 3, 252, 0.8), 
+            0 0 30px rgba(119, 3, 252, 0.9), 
+            0 0 40px rgba(119, 3, 252, 1); 
 }
 
 nav {
@@ -99,31 +99,31 @@ nav {
     width: 100px;
     height: 50px;
     background: transparent;
-    border: 2px solid #7703fc; /* Borde del botón */
-    border-radius: 6px; /* Esquinas redondeadas */
+    border: 2px solid #7703fc;
+    border-radius: 6px; 
     cursor: pointer;
-    font-size: 1.1rem; /* Tamaño de fuente */
-    color: lightgrey; /* Color del texto */
-    font-weight: 600; /* Peso de la fuente */
-    position: relative; /* Para el posicionamiento de la sombra */
-    overflow: hidden; /* Para ocultar sombras que sobresalgan */
-    transition: all 0.3s ease; /* Transición suave al pasar el mouse */
+    font-size: 1.1rem; 
+    color: lightgrey; 
+    font-weight: 600; 
+    position: relative;
+    overflow: hidden; 
+    transition: all 0.3s ease; 
     z-index: 2;
 }
 
-/* Efecto de sombra y neón al pasar el mouse */
+
 .navigation .login:hover {
-    color: #fff; /* Cambia el color del texto al pasar el mouse */
-    border-color: #7703fc; /* Cambia el color del borde */
-    box-shadow: 0 0 10px rgba(119, 3, 252, 0.7), /* Sombra suave */
-                0 0 20px rgba(119, 3, 252, 0.6), /* Sombra difusa */
-                0 0 30px rgba(119, 3, 252, 0.5), /* Sombra intensa */
-                0 0 40px rgba(119, 3, 252, 0.4); /* Sombra máxima */
-    text-shadow: 0 0 5px rgba(119, 3, 252, 1), /* Sombra de texto */
-                 0 0 10px rgba(119, 3, 252, 0.9); /* Sombra de texto más intensa */
+    color: #fff; 
+    border-color: #7703fc; 
+    box-shadow: 0 0 10px rgba(119, 3, 252, 0.7), 
+                0 0 20px rgba(119, 3, 252, 0.6), 
+                0 0 30px rgba(119, 3, 252, 0.5), 
+                0 0 40px rgba(119, 3, 252, 0.4); 
+    text-shadow: 0 0 5px rgba(119, 3, 252, 1), 
+                 0 0 10px rgba(119, 3, 252, 0.9); 
 }
 
-/* Transición al salir el mouse */
+
 .navigation .login:active {
     box-shadow: 0 0 5px rgba(119, 3, 252, 0.7), 
                 0 0 10px rgba(119, 3, 252, 0.6);
@@ -137,31 +137,31 @@ nav {
     width: 100px;
     height: 50px;
     background: transparent;
-    border: 2px solid #7703fc; /* Borde del botón */
-    border-radius: 6px; /* Esquinas redondeadas */
+    border: 2px solid #7703fc; 
+    border-radius: 6px; 
     cursor: pointer;
-    font-size: 1.1rem; /* Tamaño de fuente */
-    color: lightgrey; /* Color del texto */
-    font-weight: 600; /* Peso de la fuente */
-    position: relative; /* Para el posicionamiento de la sombra */
-    overflow: hidden; /* Para ocultar sombras que sobresalgan */
-    transition: all 0.3s ease; /* Transición suave al pasar el mouse */
+    font-size: 1.1rem; 
+    color: lightgrey; 
+    font-weight: 600; 
+    position: relative; 
+    overflow: hidden; 
+    transition: all 0.3s ease; 
     z-index: 2;
 }
 
 
 .navigation .signup:hover {
-    color: lightgrey; /* Cambia el color del texto al pasar el mouse */
-    border-color: #7703fc; /* Cambia el color del borde */
-    box-shadow: 0 0 10px rgba(119, 3, 252, 0.7), /* Sombra suave */
-                0 0 20px rgba(119, 3, 252, 0.6), /* Sombra difusa */
-                0 0 30px rgba(119, 3, 252, 0.5), /* Sombra intensa */
-                0 0 40px rgba(119, 3, 252, 0.4); /* Sombra máxima */
-    text-shadow: 0 0 5px rgba(119, 3, 252, 1), /* Sombra de texto */
-                 0 0 10px rgba(119, 3, 252, 0.9); /* Sombra de texto más intensa */
+    color: lightgrey; 
+    border-color: #7703fc; 
+    box-shadow: 0 0 10px rgba(119, 3, 252, 0.7), 
+                0 0 20px rgba(119, 3, 252, 0.6), 
+                0 0 30px rgba(119, 3, 252, 0.5), 
+                0 0 40px rgba(119, 3, 252, 0.4); 
+    text-shadow: 0 0 5px rgba(119, 3, 252, 1),
+                 0 0 10px rgba(119, 3, 252, 0.9); 
 }
 
-/* Transición al salir el mouse */
+
 .navigation .login:active {
     box-shadow: 0 0 5px rgba(119, 3, 252, 0.7), 
                 0 0 10px rgba(119, 3, 252, 0.6);

@@ -5,23 +5,23 @@ const loginlink = document.querySelector(".login-link");
 const registerlink = document.querySelector(".register-link");
 const ntb = document.querySelector(".ntb");
 const closeicon = document.querySelector(".close-icon");
-const pauseButton = document.getElementById('pauseButton'); // Botón de pausa
+const pauseButton = document.getElementById('pauseButton');
 
-// Control del estado de las partículas
-let particlesEnabled = true; // Inicialmente habilitado
 
-// Cargar partículas
-particlesJS.load('particles-js', './javascript/particles-config.json', function () {
+let particlesEnabled = true;
 
-    // Escuchar clics en el botón de pausa
+
+particlesJS.load('particles-js', '../javascript/particles-config.json', function () {
+
+
     pauseButton.addEventListener('click', function () {
-        particlesEnabled = !particlesEnabled; // Alternar el estado de las partículas
+        particlesEnabled = !particlesEnabled;
 
         if (pJSDom && pJSDom.length) {
-            // Activar o desactivar el movimiento de las partículas
+
             pJSDom[1].pJS.particles.move.enable = particlesEnabled;
             if (particlesEnabled) {
-                pJSDom[1].pJS.fn.particlesRefresh(); // Refrescar las partículas al reanudar
+                pJSDom[1].pJS.fn.particlesRefresh();
 
             } else {
 
@@ -30,7 +30,7 @@ particlesJS.load('particles-js', './javascript/particles-config.json', function 
     });
 });
 
-// Manejo de enlaces y botones
+
 registerlink.addEventListener("click", () => {
     deep.classList.add('active');
 });

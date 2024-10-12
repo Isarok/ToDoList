@@ -1,34 +1,33 @@
-// En tu archivo main.js
 document.addEventListener('DOMContentLoaded', function () {
     const loginButton = document.getElementById('loginButton');
     const signupButton = document.getElementById('signupButton');
     const pauseButton = document.getElementById('pauseButton');
-    let particlesEnabled = true; // Controlar si las partículas están habilitadas
+    let particlesEnabled = true;
 
-    // Cargar partículas
+
     particlesJS.load('particles-js', './javascript/particles-config.json', function () {
         console.log('particles.js loaded - callback');
-        console.log(pJSDom); // Verificar si se carga correctamente
+        console.log(pJSDom);
     });
 
-    // Manejador de clic para el botón de pausa
+
     pauseButton.addEventListener('click', function () {
-        particlesEnabled = !particlesEnabled; // Alternar estado de las partículas
-        console.log('Particles enabled:', particlesEnabled); // Para ver el estado en la consola
+        particlesEnabled = !particlesEnabled;
+
 
         if (pJSDom && pJSDom.length) {
-            // Activar o desactivar partículas
-            pJSDom[1].pJS.particles.move.enable = particlesEnabled; // Activar/desactivar el movimiento
+
+            pJSDom[1].pJS.particles.move.enable = particlesEnabled;
             if (particlesEnabled) {
-                pJSDom[1].pJS.fn.particlesRefresh(); // Refrescar partículas al reanudar
-                console.log('Partículas reanudadas'); // Mensaje en consola
+                pJSDom[1].pJS.fn.particlesRefresh();
+
             } else {
-                console.log('Partículas pausadas'); // Mensaje en consola
+
             }
         }
     });
 
-    // Navegación de botones
+
     loginButton.addEventListener('click', function () {
         window.location.href = './html/login.html';
     });
@@ -45,4 +44,4 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 
-/* window.location.href = 'https://to-do-list-github-io-woad.vercel.app/html/login.html#'; */
+

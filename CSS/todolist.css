@@ -37,11 +37,11 @@ header {
   cursor: pointer;
   display: flex;
   text-shadow: 
-    0 0 5px rgba(119, 3, 252, 0.7),  /* Sombra suave cerca del texto */
-    0 0 10px rgba(119, 3, 252, 0.7), /* Sombra más difusa */
-    0 0 20px rgba(119, 3, 252, 0.8), /* Sombra intensa */
-    0 0 30px rgba(119, 3, 252, 0.9), /* Sombra aún más intensa */
-    0 0 40px rgba(119, 3, 252, 1); /* Sombra máxima */
+    0 0 5px rgba(119, 3, 252, 0.7), 
+    0 0 10px rgba(119, 3, 252, 0.7), 
+    0 0 20px rgba(119, 3, 252, 0.8), 
+    0 0 30px rgba(119, 3, 252, 0.9), 
+    0 0 40px rgba(119, 3, 252, 1); 
 }
 
 
@@ -61,11 +61,11 @@ header {
   left: 0;
   height: 2px;
   background: #7703fc;
-  box-shadow: 0 0 4px rgba(119, 3, 252, 0.7), /* Sombra suave */
-  0 0 5px rgba(119, 3, 252, 0.6), /* Sombra difusa */
-  0 0 6px rgba(119, 3, 252, 0.5), /* Sombra intensa */
-  0 0 8px rgba(119, 3, 252, 0.4), /* Sombra máxima */
-  0 0 10px rgba(119, 3, 252, 0.2); /* Sombra máxima */
+  box-shadow: 0 0 4px rgba(119, 3, 252, 0.7), 
+  0 0 5px rgba(119, 3, 252, 0.6), 
+  0 0 6px rgba(119, 3, 252, 0.5), 
+  0 0 8px rgba(119, 3, 252, 0.4), 
+  0 0 10px rgba(119, 3, 252, 0.2); 
   transform: scaleX(0);
   transform-origin: right;
   transition: transform .4s;
@@ -108,10 +108,10 @@ button {
   border-bottom-left-radius: 10px;
   padding: 10px;
   outline: none;
-  box-shadow: 0 0 4px rgba(119, 3, 252, 0.7), /* Sombra suave */
-                0 0 5px rgba(119, 3, 252, 0.6), /* Sombra difusa */
-                0 0 6px rgba(119, 3, 252, 0.5), /* Sombra intensa */
-                0 0 8px rgba(119, 3, 252, 0.4); /* Sombra máxima */
+  box-shadow: 0 0 4px rgba(119, 3, 252, 0.7), 
+                0 0 5px rgba(119, 3, 252, 0.6), 
+                0 0 6px rgba(119, 3, 252, 0.5), 
+                0 0 8px rgba(119, 3, 252, 0.4); 
  
 }
 
@@ -131,10 +131,10 @@ button {
   padding: 11px;
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
-  box-shadow: 0 0 1px rgba(119, 3, 252, 0.7), /* Sombra suave */
-                0 0 2px rgba(119, 3, 252, 0.6), /* Sombra difusa */
-                0 0 3px rgba(119, 3, 252, 0.5), /* Sombra intensa */
-                0 0 4px rgba(119, 3, 252, 0.4); /* Sombra máxima */
+  box-shadow: 0 0 1px rgba(119, 3, 252, 0.7), 
+                0 0 2px rgba(119, 3, 252, 0.6), 
+                0 0 3px rgba(119, 3, 252, 0.5), 
+                0 0 4px rgba(119, 3, 252, 0.4); 
 }
 
 .to-do-list {
@@ -173,10 +173,10 @@ button {
   color: lightgrey;
   background-color: transparent;
   border: 1px solid #7703fc;
-  box-shadow: 0 0 1px rgba(119, 3, 252, 0.7), /* Sombra suave */
-                0 0 2px rgba(119, 3, 252, 0.6), /* Sombra difusa */
-                0 0 3px rgba(119, 3, 252, 0.5), /* Sombra intensa */
-                0 0 4px rgba(119, 3, 252, 0.4); /* Sombra máxima */
+  box-shadow: 0 0 1px rgba(119, 3, 252, 0.7), 
+                0 0 2px rgba(119, 3, 252, 0.6), 
+                0 0 3px rgba(119, 3, 252, 0.5), 
+                0 0 4px rgba(119, 3, 252, 0.4); 
 }
 
 .item {
@@ -186,7 +186,7 @@ button {
   background-color: rgba(0, 0, 0, 0.3);
   border-radius: 10px;
   padding: 8px;
-  box-shadow: 0 0 1px rgba(119, 3, 252, 0.7); /* Sombra suave */               
+  box-shadow: 0 0 1px rgba(119, 3, 252, 0.7);                
 }
 
 .priority{
@@ -332,7 +332,7 @@ textarea:focus {
 
   .app {
     width: 95%;
-    /* text-align: center; */
+    
   }
 
   .input-header {
