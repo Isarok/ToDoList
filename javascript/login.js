@@ -11,7 +11,7 @@ const pauseButton = document.getElementById('pauseButton'); // Botón de pausa
 let particlesEnabled = true; // Inicialmente habilitado
 
 // Cargar partículas
-particlesJS.load('particles-js', '../javascript/particles-config.json', function () {
+particlesJS.load('particles-js', './javascript/particles-config.json', function () {
 
     // Escuchar clics en el botón de pausa
     pauseButton.addEventListener('click', function () {

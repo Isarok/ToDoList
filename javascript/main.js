@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function () {
     let particlesEnabled = true; // Controlar si las partículas están habilitadas
 
     // Cargar partículas
-    particlesJS.load('particles-js', '../javascript/particles-config.json', function () {
+    particlesJS.load('particles-js', './javascript/particles-config.json', function () {
         console.log('particles.js loaded - callback');
         console.log(pJSDom); // Verificar si se carga correctamente
     });
