@@ -30,11 +30,11 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Navegación de botones
     loginButton.addEventListener('click', function () {
-        window.location.href = 'http://127.0.0.1:5500/html/login.html';
+        window.location.href = './html/login.html';
     });
 
     signupButton.addEventListener('click', function () {
-        window.location.href = 'http://127.0.0.1:5500/html/login.html';
+        window.location.href = './html/login.html';
     });
 });
 

@@ -1,5 +1,5 @@
 const itemsArray = localStorage.getItem("items") ? JSON.parse(localStorage.getItem("items")) : []
-console.log(itemsArray)
+
 
 document.querySelector("#enter").addEventListener("click", () => {
     const item = document.querySelector("#item")

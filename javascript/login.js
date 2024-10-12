@@ -1,5 +1,4 @@
 const itemsArray = localStorage.getItem("items") ? JSON.parse(localStorage.getItem("items")) : [];
-console.log(itemsArray);
 
 const deep = document.querySelector(".deep");
 const loginlink = document.querySelector(".login-link");
@@ -13,22 +12,19 @@ let particlesEnabled = true; // Inicialmente habilitado
 
 // Cargar partículas
 particlesJS.load('particles-js', '../javascript/particles-config.json', function () {
-    console.log('particles.js loaded - callback');
 
     // Escuchar clics en el botón de pausa
     pauseButton.addEventListener('click', function () {
-        console.log('Pausar botón clickeado');
         particlesEnabled = !particlesEnabled; // Alternar el estado de las partículas
-        console.log('Particles enabled:', particlesEnabled); // Mostrar estado en consola
 
         if (pJSDom && pJSDom.length) {
             // Activar o desactivar el movimiento de las partículas
-            pJSDom[1].pJS.particles.move.enable = particlesEnabled; // Cambia a 0 si es el primer objeto
+            pJSDom[1].pJS.particles.move.enable = particlesEnabled;
             if (particlesEnabled) {
                 pJSDom[1].pJS.fn.particlesRefresh(); // Refrescar las partículas al reanudar
-                console.log('Partículas reanudadas'); // Mensaje en consola
+
             } else {
-                console.log('Partículas pausadas'); // Mensaje en consola
+
             }
         }
     });

@@ -34,16 +34,18 @@
             <form action="../html/todolist.html">
                 <div class="container-input">
                     <span class="icon"><i class="fa-solid fa-envelope"></i></span>
-                    <input type="email" required aria-label="Email address" placeholder="Email">
+                    <input type="email" id="email" name="email" required aria-label="Email address" placeholder=""
+                        autocomplete="username">
                     <label for="email">Email</label>
                 </div>
                 <div class="container-input">
                     <span class="icon"><i class="fa-solid fa-lock"></i></span>
-                    <input type="password" required aria-label="Password" placeholder="Password">
+                    <input type="password" id="password" name="password" required aria-label="Password" placeholder=""
+                        autocomplete="current-password">
                     <label for="password">Password</label>
                 </div>
                 <div class="remember">
-                    <label><input type="checkbox" aria-label="Remember session">Remember session</label>
+                    <label><input type="checkbox" id="terms" aria-label="Remember session">Remember session</label>
                     <a href="#" aria-label="Reset password">Did I forget the password?</a>
                 </div>
                 <button type="submit" class="ntb">Log In</button>
@@ -58,21 +60,26 @@
             <form action="#">
                 <div class="container-input">
                     <span class="icon"><i class="fa-solid fa-user"></i></span>
-                    <input type="text" required aria-label="Username" placeholder="Username">
+                    <input type="text" id="username" required aria-label="Username" placeholder=""
+                        autocomplete="username">
                     <label for="username">Username</label>
                 </div>
                 <div class="container-input">
                     <span class="icon"><i class="fa-solid fa-envelope"></i></span>
-                    <input type="email" required aria-label="Email address" placeholder="Email">
+                    <input type="email" id="register-email" name="email" required aria-label="Email address"
+                        placeholder="" autocomplete="username">
                     <label for="email">Email</label>
                 </div>
                 <div class="container-input">
                     <span class="icon"><i class="fa-solid fa-lock"></i></span>
-                    <input type="password" required aria-label="Password" placeholder="Password">
+                    <input type="password" id="register-password" name="password" required aria-label="Password"
+                        placeholder="" autocomplete="current-password">
                     <label for="password">Password</label>
                 </div>
                 <div class="remember">
-                    <label><input type="checkbox" aria-label="Accept terms and conditions">Accept terms and
+                    <label><input type="register-checkbox" id="register-terms"
+                            aria-label="Accept terms and conditions">Accept
+                        terms and
                         conditions</label>
                 </div>
                 <button type="submit" class="ntb">Register</button>
@@ -83,12 +90,12 @@
         </div>
     </section>
 
-    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
+    <script src="../javascript/particles.min.js"></script>
     <script src="../javascript/login.js"></script>
     <script>
         // Inicializar Partículas
         particlesJS.load('particles-js', '../javascript/particles-config.json', function () {
-            console.log('particles.js loaded - callback');
         });
     </script>
 </body>
