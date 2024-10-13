@@ -36,12 +36,11 @@ header {
   user-select: none;
   cursor: pointer;
   display: flex;
-  text-shadow: 
-    0 0 5px rgba(119, 3, 252, 0.7), 
-    0 0 10px rgba(119, 3, 252, 0.7), 
-    0 0 20px rgba(119, 3, 252, 0.8), 
-    0 0 30px rgba(119, 3, 252, 0.9), 
-    0 0 40px rgba(119, 3, 252, 1); 
+  text-shadow: 0 0 5px rgba(119, 3, 252, 0.6), 
+               0 0 10px rgba(119, 3, 252, 0.7), 
+               0 0 20px rgba(119, 3, 252, 0.8), 
+               0 0 30px rgba(119, 3, 252, 0.9), 
+               0 0 40px rgba(119, 3, 252, 1); 
 }
 
 
@@ -62,10 +61,10 @@ header {
   height: 2px;
   background: #7703fc;
   box-shadow: 0 0 4px rgba(119, 3, 252, 0.7), 
-  0 0 5px rgba(119, 3, 252, 0.6), 
-  0 0 6px rgba(119, 3, 252, 0.5), 
-  0 0 8px rgba(119, 3, 252, 0.4), 
-  0 0 10px rgba(119, 3, 252, 0.2); 
+              0 0 5px rgba(119, 3, 252, 0.6), 
+              0 0 6px rgba(119, 3, 252, 0.5), 
+              0 0 8px rgba(119, 3, 252, 0.4), 
+              0 0 10px rgba(119, 3, 252, 0.2); 
   transform: scaleX(0);
   transform-origin: right;
   transition: transform .4s;
@@ -109,9 +108,9 @@ button {
   padding: 10px;
   outline: none;
   box-shadow: 0 0 4px rgba(119, 3, 252, 0.7), 
-                0 0 5px rgba(119, 3, 252, 0.6), 
-                0 0 6px rgba(119, 3, 252, 0.5), 
-                0 0 8px rgba(119, 3, 252, 0.4); 
+              0 0 5px rgba(119, 3, 252, 0.6), 
+              0 0 6px rgba(119, 3, 252, 0.5), 
+              0 0 8px rgba(119, 3, 252, 0.4); 
  
 }
 
@@ -121,6 +120,7 @@ button {
   font-family: inherit;
   border: 2px solid #7703fc;
   padding: 9.5px;
+  border-radius: 0px;
   
 }
 
@@ -186,7 +186,7 @@ button {
   background-color: rgba(0, 0, 0, 0.3);
   border-radius: 10px;
   padding: 8px;
-  box-shadow: 0 0 1px rgba(119, 3, 252, 0.7);                
+  box-shadow: 0 0 4px rgba(119, 3, 252, 0.7);                
 }
 
 .priority{

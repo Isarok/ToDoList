@@ -14,17 +14,7 @@
     overflow: hidden;
 }
 
-#toggleParticles {
-    
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border: 2px solid #7703fc;
-    cursor: pointer;
-    font-size: 1.1rem;
-    transition: background-color 0.3s ease;
-    z-index: 2;
-}
+
 
 body {
     display: flex;
@@ -96,7 +86,7 @@ header {
     transform-origin: left;
 }
 
-.navigation .ntb {
+.navigation .login {
     width: 140px;
     height: 50px;
     background: transparent;
@@ -112,9 +102,7 @@ header {
     
 }
 
-
-
-.navigation .ntb:hover {
+.navigation .login:hover {
     color: #fff; 
     border-color: #7703fc; 
     box-shadow: 0 0 10px rgba(119, 3, 252, 0.7), 
@@ -125,20 +113,50 @@ header {
                  0 0 10px rgba(119, 3, 252, 0.9); 
 }
 
-.navigation .ntb:active {
+.navigation .login:active {
     box-shadow: 0 0 5px rgba(119, 3, 252, 0.7), 
                 0 0 10px rgba(119, 3, 252, 0.6);
 }
+
+.navigation .pause {
+    width: 50px;
+    height: 50px;
+    background: transparent;
+    border: 2px solid #7703fc;
+    border-radius: 90px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    color: lightgrey;
+    font-weight: 600; 
+    position: relative; 
+    overflow: hidden; 
+    transition: all 0.3s ease;   
+}
+
+.navigation .pause:hover {
+    color: #fff; 
+    border-color: #7703fc; 
+    box-shadow: 0 0 10px rgba(119, 3, 252, 0.7), 
+                0 0 20px rgba(119, 3, 252, 0.6), 
+                0 0 30px rgba(119, 3, 252, 0.5), 
+                0 0 40px rgba(119, 3, 252, 0.4); 
+    text-shadow: 0 0 5px rgba(119, 3, 252, 1), 
+                 0 0 10px rgba(119, 3, 252, 0.9); 
+}
+
 
 .deep {
     position: relative;
     width: 350px;
     height: 380px;
     background: transparent;
-    border: 2px solid rgba(225, 225, 225, .5);
+    border: 2px solid rgba(119, 3, 252, 0.4);
     border-radius: 20px;
-    backdrop-filter: blur(20px);
-    box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 3px rgba(119, 3, 252, 0.7), 
+                0 0 6px rgba(119, 3, 252, 0.6), 
+                0 0 9px rgba(119, 3, 252, 0.5), 
+                0 0 12px rgba(119, 3, 252, 0.4);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -157,7 +175,7 @@ header {
 
 .deep .container-form {
     width: 100%;
-    padding: 40px;
+    padding: 30px;
 }
 
 .deep .container-form.login {
@@ -187,15 +205,21 @@ header {
     right: 0;
     width: 45px;
     height: 45px;
-    background-color: #7411ff;
+    background-color: #7703fc;
     display: flex;
     justify-content: center;
     align-items: center;
     border-bottom-left-radius: 20px;
     cursor: pointer;
     z-index: 1;
-    font-size: 1, 8em;
+    font-size: 1.8em;
     color: #F1EFEF;
+    border-bottom: lightgrey; 
+    box-shadow: 0 0 10px rgba(119, 3, 252, 0.7), 
+                0 0 20px rgba(119, 3, 252, 0.6), 
+                0 0 30px rgba(119, 3, 252, 0.5), 
+                0 0 40px rgba(119, 3, 252, 0.4); 
+    
 }
 
 .container-form h2 {
@@ -208,8 +232,21 @@ header {
     position: relative;
     width: 100%;
     height: 50px;
-    border-bottom: 2px solid #F1EFEF;
+    border-bottom: 2px solid #7703fc;
     margin: 30px 0;
+}
+
+.container-input::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 1px; 
+    height: 1px; 
+    width: 100%;
+    box-shadow: 0 0 10px rgba(119, 3, 252, 0.7), 
+                0 0 20px rgba(119, 3, 252, 0.6), 
+                0 0 30px rgba(119, 3, 252, 0.5), 
+                0 0 40px rgba(119, 3, 252, 0.4);
 }
 
 .container-input label {
@@ -237,15 +274,15 @@ header {
     border: none;
     outline: none;
     font-size: 1em;
-    color: #F1EFEF;
+    color: lightgrey ;
     padding: 0 35px 0 5px;
 }
 
 .container-input .icon {
     position: absolute;
     right: 8px;
-    font-size: 1.4em;
-    color: #7411ff;
+    font-size: 1.8em;
+    color: #7703fc;
     line-height: 57px;
 }
 
@@ -271,6 +308,7 @@ header {
 
 .remember a:hover {
     text-decoration: underline;
+    
 }
 
 .ntb {
@@ -278,12 +316,24 @@ header {
     height: 45px;
     border: none;
     outline: none;
-    border-radius: 5px;
+    border: 2px solid #7703fc; 
+    border-radius: 6px;
     cursor: pointer;
     font-size: 1em;
     font-weight: bold;
-    background-color: #7411ff;
-    color: #F1EFEF;
+    background: transparent;
+    color: lightgrey; 
+}
+
+.ntb:hover {
+    color: #fff; 
+    border-color: #7703fc; 
+    box-shadow: 0 0 10px rgba(119, 3, 252, 0.7), 
+                0 0 20px rgba(119, 3, 252, 0.6), 
+                0 0 30px rgba(119, 3, 252, 0.5), 
+                0 0 40px rgba(119, 3, 252, 0.4); 
+    text-shadow: 0 0 5px rgba(119, 3, 252, 1), 
+                 0 0 10px rgba(119, 3, 252, 0.9); 
 }
 
 .register {
@@ -307,29 +357,40 @@ header {
     
 
     .title {
-        font-size: 0.2 em;
+        font-size: 2em;
         display: flex;
         flex-direction: row;
         margin-right: 0px;
         
     }
 
-    .navigation a {
-        font-size: 1rem;
+    .navigation a { 
+        font-size: 0.8rem;
         margin-left: 20px;
     }
 
-    .navigation .ntb {
-        width: 70px;
-        height: 35px;
+    .navigation .login {  
+        width: 65px;
+        height: 40px;
+    }
+    
+    .navigation .pause {
+  
+        width: 40px;
+        height: 40px;
+        
+    }
+
+    .deep.active {
+        height: 380px;
     }
 
     .container-form {
-        padding: 20px;
+        padding: 25px;
     }
 
     .container-input {
-        margin: 15px 0;
+        margin: 20px 0;
     }
 
     .remember {
