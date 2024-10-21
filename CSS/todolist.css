@@ -32,7 +32,7 @@ header {
 
 .title {
   font-size: 2.8em;
-  color: lightgrey;
+  color: #f0f0f0;
   user-select: none;
   cursor: pointer;
   display: flex;
@@ -47,7 +47,7 @@ header {
 .navigation a {
   position: relative;
   font-size: 1.2rem;
-  color: lightgrey;
+  color: #f0f0f0;
   text-decoration: none;
   font-weight: 600;
 }
@@ -86,7 +86,7 @@ button {
   width: 600px;
   margin: auto;
   padding-top: 50px;
-  color: lightgrey;
+  color: #f0f0f0;
 }
 
 .input-header {
@@ -170,7 +170,7 @@ button {
   border-radius: 10px;
   cursor: pointer;
   font-family: inherit;
-  color: lightgrey;
+  color: #f0f0f0;
   background-color: transparent;
   border: 1px solid #7703fc;
   box-shadow: 0 0 1px rgba(119, 3, 252, 0.7), 
@@ -208,7 +208,7 @@ button {
   border: none;
   resize: none;
   line-height: 1.4;
-  color: lightgrey;
+  color: #f0f0f0;
   border-radius: 10px;
   background-color: transparent;
   font-size: 1.2rem;
@@ -310,7 +310,7 @@ textarea:focus {
     opacity: 1;
   }
   .navigation a::after {
-    background: lightgrey;
+    background: #f0f0f0;
     
   }
 
