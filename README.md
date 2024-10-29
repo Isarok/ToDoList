@@ -13,8 +13,11 @@ My ToDoList es una aplicación de gestión de tareas centrada en la simplicidad 
 - HTML5 - Estructura de la aplicación.
 - CSS3 - Estilo y diseño, incluyendo diseño responsive.
 - JavaScript (Vanilla) - Lógica de la aplicación, manejo de localStorage, y operaciones CRUD.
-- Particles.js - Fondo animado para una experiencia visual mejorada.
-- LocalStorage - Almacenamiento de tareas en el navegador para persistencia de datos.
+## 📂 Almacenamiento y Persistencia
+Web Storage API (localStorage) - Almacenamiento en el navegador para persistencia de datos.
+## 🎨 Librerías Visuales
+Particles.js - Animación del fondo para una experiencia visual mejorada y para entreternerte en tus ratos muertos ya que puedes jugar con ellas.
+
 ## 📸 Capturas de Pantalla
 <p align="center">
 <img width="200" alt="Welcome" src="https://github.com/user-attachments/assets/73a51189-fa93-46bf-b016-6d468a4bc179"> 
@@ -55,4 +58,12 @@ Utiliza localStorage para almacenar de forma persistente las tareas, manteniénd
 4. Sube tus cambios a tu repositorio (git push origin feature/nueva-funcionalidad).
 5. Abre un Pull Request.
 ## 📜 Créditos
-Particles.js - Particles.js para el fondo animado y para entreternerte en tus ratos muertos ya que puedes jugar con ellas.
+- **Particles.js**: [Particles.js](https://vincentgarreau.com/particles.js/) - Una librería para generar fondos animados.
+- **FontAwesome**: [FontAwesome](https://fontawesome.com/) - Para iconos y elementos visuales.
+- **Documentación de MDN**: [MDN Web Docs](https://developer.mozilla.org/) - Para consultas sobre HTML, CSS y JavaScript.
+- **Inspiración y Estilos**: Muchas de las ideas y estilos en este proyecto fueron inspirados por ejemplos en [CodePen](https://codepen.io/miguelznunez/pen/yLEroqK). Aquí hay algunos enlaces específicos que me ayudaron en el diseño.
+- **Tutorial** - Este tutorial me enseñó a implementar un sistema CRUD básico en mi proyecto.[youtube](https://www.youtube.com/watch?v=SeKQSQDUMDQ&t=527s).
+## 📚 Agradecimientos
+- Agradezco a todos los tutoriales en línea a esas personas que comparten sus conocimientos y tiempo, dandonos esa oportunidad de aprendizaje y recursos que ayudan para aplicar tecnologías web en este proyecto.
+
+
